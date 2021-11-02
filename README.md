@@ -18,8 +18,8 @@ Today, we begin the first of a 4-Phase build of the CAPS system, written in Node
 - As a developer, I want to create an event driven system so that I can write code that happens in response to events, in real time.
 
 ## Links to application deployment
-pull: 
-actions: 
+pull: https://github.com/anthonylouismorton/caps/pull/1
+actions: https://github.com/anthonylouismorton/caps/actions
 
 ## Include embedded UML
 ![uml](./Lab11.png)
