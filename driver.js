@@ -1,15 +1,14 @@
 'use strict'
 
-const driver = require('./eventPool.js');
-require('./package-manager')
-require('./vendor.js')
+const socketio = require('socket.io-client')
+const caps = socketio.connect('http://localhost:3031/caps')
 
-driver.on('pickup', handlePickup)
+caps.on('pickup', handlePickup)
 
 function handlePickup(payload){
   console.log(`Driver: picked up ${payload.orderID} `)
-  driver.emit('in-transit', payload)
-  driver.emit('delivered', payload)
+  caps.emit('in-transit', payload)
+  caps.emit('delivered', payload)
 }
 
 module.exports = handlePickup;
