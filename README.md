@@ -16,7 +16,7 @@ In Phase 2, we’ll be changing the underlying networking implementation of our 
 - As a vendor, I want to be notified when my package has been delivered.
 
 ## Links to application deployment
-pull: https://github.com/anthonylouismorton/caps/pull/1
+pull: https://github.com/anthonylouismorton/caps/pull/2
 actions: https://github.com/anthonylouismorton/caps/actions
 
 ## Include embedded UML
